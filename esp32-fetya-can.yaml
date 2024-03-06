@@ -257,9 +257,9 @@ jk_bms:
 
 # +--------------------------------------+
 
-time: # Enable time component to reset energy at midnight
-  - platform: homeassistant
-    id: homeassistant_time
+#time: # Enable time component to reset energy at midnight
+#  - platform: homeassistant
+#    id: homeassistant_time
 
 select:
   - platform: template
@@ -548,26 +548,26 @@ sensor:
   # +--------------------------------------+
   # | Total Daily Energy                   |
   # +--------------------------------------+
-  - platform: total_daily_energy
-    name: "${name} BMS Daily Charging Power"
-    power_id: charging_power
-    unit_of_measurement: 'kWh'
-    state_class: total_increasing
-    device_class: energy
-    accuracy_decimals: 3
-    filters:
-      # Multiplication factor from W to kW is 0.001
-      - multiply: 0.001
-  - platform: total_daily_energy
-    name: "${name} BMS Daily Discharging Power"
-    power_id: discharging_power
-    unit_of_measurement: 'kWh'
-    state_class: total_increasing
-    device_class: energy
-    accuracy_decimals: 3
-    filters:
-      # Multiplication factor from W to kW is 0.001
-      - multiply: 0.001
+#  - platform: total_daily_energy
+#    name: "${name} BMS Daily Charging Power"
+#    power_id: charging_power
+#    unit_of_measurement: 'kWh'
+#    state_class: total_increasing
+#    device_class: energy
+#    accuracy_decimals: 3
+#    filters:
+#      # Multiplication factor from W to kW is 0.001
+#      - multiply: 0.001
+#  - platform: total_daily_energy
+#    name: "${name} BMS Daily Discharging Power"
+#    power_id: discharging_power
+#    unit_of_measurement: 'kWh'
+#    state_class: total_increasing
+#    device_class: energy
+#    accuracy_decimals: 3
+#    filters:
+#      # Multiplication factor from W to kW is 0.001
+#      - multiply: 0.001
   # +--------------------------------------+
   # | Uptime sensor                        |
   # +--------------------------------------+
