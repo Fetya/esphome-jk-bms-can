@@ -1,0 +1,1 @@
+esphome run esp32-fetya-can.yaml
